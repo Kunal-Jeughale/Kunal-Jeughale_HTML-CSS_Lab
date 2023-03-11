@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+  <title>Lab Session HTML CSS</title>
+ <style>
+    header{
+  background-color: red;
+  text-align: end;
+  padding: 20px;  
+}
+nav{
+    background-color: grey;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;   
+}
+li{
+    margin-left: 10px;
+    position: relative;  
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.dropdownMenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: beige;
+}
+li.dropdown:hover .dropdownMenu{
+display: block;
+}
+.dropdownMenu li{
+    margin: 0;
+}
+.dropdownMenu a{
+    padding: 5px 10px;
+}
+.dropdownMenu a:hover{
+  background-color: rgb(86, 167, 167);
+
+}
+a{
+  display: block;
+  background-color: grey;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px;
+}
+  </style> 
+</head>
+<body>
+  <header>
+    <h1>lab Session HTML</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">link 1</a></li>
+        <li class="dropdown">
+        <a href="#">link 2</a>
+          <ul class="dropdownMenu"> 
+            <li><a href="#">DD_link_1</a></li>
+            <li><a href="#">DD_link_2</a></li>
+            <li><a href="#">DD_link_3</a></li>
+          </ul> 
+        </li>
+        <li class="dropdown">
+          <a href="#">link 3</a>
+          <ul class="dropdownMenu"> 
+            <li><a href="#">DD_link_1</a></li>
+            <li><a href="#">DD_link_2</a></li>
+            <li><a href="#">DD_link_3</a></li>
+            </ul>  
+        </li>
+      </ul>
+    </nav>
+</html>
